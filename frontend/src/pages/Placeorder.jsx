@@ -55,6 +55,7 @@ const Placeorder = () => {
           }
         }
       }
+      // console.log(orderItems);
 
       let orderData = {
         address: formData,
