@@ -29,7 +29,18 @@ export const placeOrderStripe = async (req, res) => {};
 
 export const placeOrderRazorpay = async (req, res) => {};
 
-export const allOrders = async (req, res) => {};
+export const allOrders = async (req, res) => {
+
+  try {
+    const orders = await orderModel.find({})
+    res.json({success:true,orders})
+  } catch (error) {
+    console.log(error)
+    res.json({success:false,message:error.message})
+  }
+
+  
+};
 export const userOrders = async (req, res) => {
   try {
     const {userId} = req.body
@@ -40,4 +51,15 @@ export const userOrders = async (req, res) => {
     res.json({success:false,message:error.message})
   }
 };
-export const updateStatus = async (req, res) => {};
+export const updateStatus = async (req, res) => {
+
+  try {
+    const {orderId,status} =req.body
+  await orderModel.findByIdAndUpdate(orderId,{status})
+  res.json({success:true,message:"Statue Updated"})
+  } catch (error) {
+    console.log(error)
+    res.json({success:false,message:error.message})
+  }
+
+};
