@@ -25,11 +25,14 @@ connectCloudinary().catch((err) => {
 app.use(express.json());
 app.use(
     cors({
-        origin: 'https://trendvaultnehaa.vercel.app', // Allow frontend domain
+        origin: '*',  // Allow all origins (for testing purposes only, not recommended for production)
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
+        credentials: true, // If you are using cookies or sessions
     })
 );
+
+app.options('*', cors());  // Handle preflight requests
 
 // API Endpoints
 app.use('/api/user', userRouter);
