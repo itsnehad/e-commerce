@@ -12,8 +12,8 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
-import '../react-toastify/dist'
-import '../react-toastify/addons/use-notification-center'
+import "react-toastify/dist/ReactToastify.css"; // Ensure this is correct
+
 import Verify from './pages/Verify';
 
 const App = () => {
