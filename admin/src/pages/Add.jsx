@@ -185,7 +185,6 @@ const Add = ({ token }) => {
           <p className="mb-2">Product Price</p>
           <input
             onChange={(e) => setPrice(Number(e.target.value))}
-
             value={price}
             className="w-full px-3 py-2 sm:w-[120px]"
             type="number"
@@ -207,7 +206,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("S") ? "bg-red-100" : "bg-slate-200"
+                sizes.includes("S") ? "bg-pink-100" : "bg-slate-200"
               } bg-slate-200 px-3 py-1 cursor-pointer`}
             >
               S
@@ -225,7 +224,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("M") ? "bg-red-100" : "bg-slate-200"
+                sizes.includes("M") ? "bg-pink-100" : "bg-slate-200"
               } bg-slate-200 px-3 py-1 cursor-pointer`}
             >
               M
@@ -242,7 +241,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("L") ? "bg-red-100" : "bg-slate-200"
+                sizes.includes("L") ? "bg-pink-100" : "bg-slate-200"
               } bg-slate-200 px-3 py-1 cursor-pointer`}
             >
               L
@@ -259,7 +258,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("XL") ? "bg-red-100" : "bg-slate-200"
+                sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200"
               } bg-slate-200 px-3 py-1 cursor-pointer`}
             >
               XL
@@ -276,7 +275,7 @@ const Add = ({ token }) => {
           >
             <p
               className={`${
-                sizes.includes("XXL") ? "bg-red-100" : "bg-slate-200"
+                sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200"
               } bg-slate-200 px-3 py-1 cursor-pointer`}
             >
               XXL

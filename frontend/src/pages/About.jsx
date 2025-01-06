@@ -18,19 +18,14 @@ const About = () => {
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-            Forever was born out of a passion for innovation and a desire to
-            revolutionize Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Ipsum, adipisci?{" "}
+          TrendVault was born from a passion for timeless style, innovation, and empowering self-expression through fashion. Our mission is to redefine the shopping experience by offering high-quality apparel that blends comfort, style, and sustainability.{" "}
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-            harum.Since our inception, we've worked tirelessly to curate a
-            diverse selection of...
+          From curated collections to exclusive designs, we take pride in delivering fashion that resonates with every personality. With a commitment to excellence, we ensure every piece reflects our dedication to quality and creativity.
           </p>
           <b className="text-gray-800">Our Mission</b>
           <p>
-            Our mission at Forever is to empower customers with choice,
-            convenience, and.. Lorem ipsum dolor sit amet consectetur
+          At TrendVault, our mission is to inspire confidence and individuality in every customer. We aim to provide a seamless shopping experience, exceptional customer service, and a carefully crafted collection that speaks to every style story.
           </p>
         </div>
       </div>

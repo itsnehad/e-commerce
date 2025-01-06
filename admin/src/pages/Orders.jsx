@@ -9,7 +9,9 @@ const Orders = ({ token }) => {
 
   // Fetch all orders
   const fetchAllOrder = async () => {
-    if (!token) return;
+    if (!token) {
+      return null;
+    }
 
     try {
       const response = await axios.post(
