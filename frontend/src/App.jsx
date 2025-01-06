@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
 import '../react-toastify/dist'
+import '../react-toastify/addons/use-notification-center'
 import Verify from './pages/Verify';
 
 const App = () => {
