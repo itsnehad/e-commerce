@@ -25,7 +25,7 @@ connectCloudinary().catch((err) => {
 app.use(express.json());
 app.use(
     cors({
-        origin: ['https://trendvaultnehaa-5wc9eg92s-nehas-projects-91281573.vercel.app','https://e-commerce-eight-pi-79.vercel.app/'],  // Allow all origins (for testing purposes only, not recommended for production)
+        origin: ['https://trendvaultnehaa-5wc9eg92s-nehas-projects-91281573.vercel.app','https://e-commerce-eight-pi-79.vercel.app'],  // Allow all origins (for testing purposes only, not recommended for production)
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true, // If you are using cookies or sessions
